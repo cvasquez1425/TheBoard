@@ -1,0 +1,9 @@
+{
+  "name": "fun-with-node",
+  "version": "0.0.0",
+  "description": "FunWithNode",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}
