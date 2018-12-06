@@ -1,0 +1,15 @@
+{
+  "name": "the-board",
+  "version": "0.1.0",
+  "description": "A message board based on sticky notes. TheBoard",
+  "main": "server.js",
+  "author": {
+    "name": "Carlos Vasquez",
+    "email": "cvasquez1425@hotmail"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "jade": "^1.11.0",
+    "underscore": "^1.9.1"
+  }
+}
