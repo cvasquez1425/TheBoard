@@ -14,5 +14,8 @@
     "jade": "^1.11.0",
     "underscore": "^1.9.1",
     "vash": "^0.12.6"
+  },
+  "devDependencies": {
+    "grunt-nodemon": "^0.4.2"
   }
 }

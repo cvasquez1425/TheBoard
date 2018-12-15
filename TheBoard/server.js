@@ -5,14 +5,14 @@ var app = express();                // the express dependency reference can be e
 //Setup the view engine. We don't need a require here because we're giving it the name of it.
 //app.set("view engine", "jade");
 
-var controllers = require("./controllers");
+var controllers = require("./controllers"); //Self-referencing - it gives me access to all controllers when adding an index.js like folder dependency.
 
 //Vash View Engine
 app.set("view engine", "vash");
 
 
 //Set the public static resources folder
-app.set(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public"));
 
 
 //This is being moved to the homeController
@@ -23,7 +23,7 @@ app.set(express.static(__dirname + "/public"));
 //    res.render("index", { title: "Express + Vash" });
 //});
 
-//Map the routes
+//Map the routes. The serve page is only gonna know about the initialization of the main controllers.
 controllers.init(app);
 
 app.get("/api/users", function (req, res) {
